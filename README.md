@@ -1,6 +1,8 @@
 # iNotes Web Application
 
 iNotes is a web application designed for taking personal notes. It leverages the MERN stack (MongoDB, Express.js, React.js, Node.js) for seamless integration and optimal performance.
+For backend API development and endpoints, please refer to our [iNotes Backend Repository](https://github.com/touseef0707/iNotes-Node.js-API).
+
 
 ## Features
 
