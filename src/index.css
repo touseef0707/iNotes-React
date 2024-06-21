@@ -1,13 +1,56 @@
 body {
-  margin: 0;
+  margin-top: 56px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Custom CSS */
+:root {
+  --placeholder-color: #6c757d; /* Define placeholder color variable */
+}
+
+/* ----------The entire scrollbar------------- */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+/* The track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+    background: 	#2e2e2e; 
+}
+
+/* The draggable part of the scrollbar (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #008787; 
+    border-radius: 10px; 
+}
+
+/* The thumb when you hover over it */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+} */
+
+/* -------------CSS for Note Tiles------------- */
+.custom-card-tile{
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.custom-card-tile:hover{
+  transform: scale(1.05);
+}
+
+/* -------------CSS for form placeholders (Dark theme)------------- */
+.form-control::placeholder {
+  color: var(--placeholder-color);
 }
